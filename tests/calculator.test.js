@@ -1,24 +1,30 @@
-const { default: expect } = require('expect');
+const { sum, substract, multiply, divide, power } = require('../calculator');
 
-const calculator = require('../calculator');
+// const calculator = require('../calculator');
 
-test('adds a + b', () => {
+test('Suma a + b', () => {
     //
+    expect(sum(5, 4)).toBe(9);
 })
 
-test('substracts a - b', () => {
+test('Resta a - b', () => {
    //
+   expect(substract(5, 4)).toBe(1);
 })
 
-test('multiplies a * b', () => {
+test('Multiplica a * b', () => {
     //
+    expect(multiply(5, 4)).toBe(20);
 })
 
-test('divides a / b', () => {
+test('Divide a / b', () => {
     // Consider decimals
+    expect(divide(25, 5)).toBe(5);
+    expect(divide(5, 4)).toBe(5/4);
 })
 
-test('Raises to power a ^ b', () => {
+test('Eleva a "a" a la potencia "b": a ^ b', () => {
     //
+    expect(power(5, 4)).toBe(625);
 })
 
